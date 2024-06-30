@@ -147,8 +147,9 @@
 \contentsline {section}{\numberline {14.1}Directed graphs}{42}{}%
 \contentsline {subsection}{\numberline {14.1.1}Directed walk}{42}{}%
 \contentsline {subsection}{\numberline {14.1.2}Directed cycle}{42}{}%
-\contentsline {subsection}{\numberline {14.1.3}Directed cycle}{43}{}%
+\contentsline {subsection}{\numberline {14.1.3}Directed walk}{42}{}%
+\contentsline {subsection}{\numberline {14.1.4}Directed cycle}{43}{}%
 \contentsline {section}{\numberline {14.2}Recheability and strong connectivity}{43}{}%
 \contentsline {section}{\numberline {14.3}Reduced graphs}{43}{}%
-\contentsline {section}{\numberline {14.4}DAGs}{43}{}%
+\contentsline {section}{\numberline {14.4}DAGs}{44}{}%
 \contentsline {section}{\numberline {14.5}Binary trees}{44}{}%

@@ -1,8 +1,8 @@
-PWD /Users/fanghema/Desktop/CIS-1600/notes
+PWD /Users/fanghema/Desktop/Spring'24/CIS-1600/notes
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT cis_1600_notes.tex
+INPUT /Users/fanghema/Desktop/Spring'24/CIS-1600/notes/cis_1600_notes.tex
 OUTPUT cis_1600_notes.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/report.cls

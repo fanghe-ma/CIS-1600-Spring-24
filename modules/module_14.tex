@@ -12,10 +12,10 @@
 
 \begin{framed}
    \textbf{Definition}: The degree of a node is the sum of its out-degree and in-degree.
-   \begin{framed}
+   \begin{itemize}
       \item out-degree: number of successors, denoted $out(u)$
       \item in-degree: number of predecessors, denoted $in(u)$
-   \end{framed}
+   \end{itemize}
 \end{framed}
 
 \begin{framed}
@@ -42,7 +42,7 @@
 
 
   
-\end{\subsection{Directed walk}
+\subsection{Directed walk}
 \begin{framed}
    \textbf{Definition}: A \textbf{directed walk} of length $k$ is a non-empty sequence $u_0, u_1 \hdots u_k$ such that $u_0 \rightarrow u_1 \hdots u_k$. \\
 
@@ -84,12 +84,12 @@
 \begin{framed}
    \textbf{Proposition}: Any two distinct SCCs are disjoint.  \\
 
-  SCCs determine a partition of the vertices (but not the edges).  
+SCCs determine a partition of the vertices (but not the edges).  
 \end{framed}
 
 \section{Reduced graphs}
 \begin{framed}
-   \textbf{Definition}: Given $G = (V, E)$, the \textbf{reduced graph} has as vertices the SCCs of $G$ and edges as pairs $(S_1, S_2) $ where $S_1 \neq S_2, $ and $\exist u_1 \in S_1, u_2 \in S_2$ such that $u_1 \rightarrow u_2 \in E$
+   \textbf{Definition}: Given $G = (V, E)$, the \textbf{reduced graph} has as vertices the SCCs of $G$ and edges as pairs $(S_1, S_2) $ where $S_1 \neq S_2$ and $\exists u_1 \in S_1, u_2 \in S_2$ such that $u_1 \rightarrow u_2 \in E$
 \end{framed}
 
 \begin{framed}
