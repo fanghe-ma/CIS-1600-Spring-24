@@ -1,0 +1,185 @@
+\chapter{Module 2}
+
+\section{Counting subsets}
+
+\subsection{Cardinality of powerset}
+The cardinality of the powerset $2^A$ is the number of subsets of  $A$
+\[
+   |2^A| = 2^{|A|}
+\] 
+
+
+\section{Permutations}
+
+\begin{framed}
+   \textbf{Definition}: Let  $A$ be a non-empty set with $n$ elements 
+   \[
+     |A| = n
+   \] 
+   A \textbf{permutation} of $A$ is an ordering of all elements of $A$ without repetition \\
+   \[
+     n!
+   \] 
+
+   A partial permutation of $r$ out of $n$ elements of $A$ consists of picking $r$ of the elements and ordering them without repetition
+   \[
+     \frac{n!}{(n -r)!}
+   \] 
+\end{framed}
+
+\section{Logical structure of statements}
+
+\subsection{Logical connectives}
+\begin{framed}
+   Connectives
+\begin{itemize}
+   \item \textbf{conjunction}:  $\quad "and" \quad \land$
+   \item \textbf{disjunction}:  $\quad "or" \quad \lor$
+   \item \textbf{implication}:  $\quad "if-then" \quad \Rightarrow$
+   \item \textbf{negation}:  $\quad "not" \quad \lnot$
+\end{itemize}
+\end{framed}
+
+For example, a letter $l$ is either a vowel or a consonant can be expressed as
+\[
+   letter(l) \Rightarrow [
+   (vowel(l) \land \lnot consonant(l)) \lor (consonant(l) \land \lnot vowel(l))
+   ] 
+\] 
+\[
+   letter(l) \Rightarrow [
+   vowel(l) \land consonant(l)) \land \lnot (vowel(l) \land consonant(l))
+   ]
+\] 
+
+\subsection{Logic set-builder notation}
+\begin{framed}
+   If $P(x)$ is some logical statement about $x$, $A$ is the set of elements that satisfies the logical statement
+   \[
+     A = \{ x | P(x)\} 
+   \] 
+  
+\end{framed}
+
+
+\section{Implication, conditional and equivalence}
+\begin{framed}
+\begin{itemize}
+   \item \textbf{implication}: if $P_1$ then $P_2$ : $P_1 \Rightarrow P_2$ 
+   \item \textbf{biconditional / equivalence}: if $P_1$ then $P_2$ and if  $P_2$ then $P_1$ 
+      \[
+         \left( P_1 \Rightarrow P_2 \right)  \lor \left( P_2 \Rightarrow P_1 \right) 
+      \] 
+      \[
+        P_1 \iff P_2
+      \]
+\end{itemize}
+\end{framed}
+
+\section{Symmetric difference}
+\begin{framed}
+   The symmetric difference of two sets $A, B$ is 
+   \[
+     A \triangle B = \left( A \setminus B \right) \cup \left( B \setminus \right) 
+   \] 
+   \[
+     A \triangle B = \{ x | \left( x \in A \land x \notin B \right) \lor \left( x \notin A \land x \in B \right)   \} 
+   \] 
+\end{framed}
+
+
+\section{Two basic proof patters}
+
+\subsection{Proof pattern for implication}
+
+\begin{framed}
+   To prove that
+   \[
+     P_1 \Rightarrow P_2
+   \] 
+   \textbf{Proof pattern}
+   \begin{enumerate}
+      \item assert premise $P_1$
+      \item logical / mathematical consequences
+      \item assert conclusion $P_2$
+   \end{enumerate}
+\end{framed}
+
+\subsection{Proof pattern by cases}
+
+\begin{framed}
+   Assuming $P_1 \lor P_2$, to prove $P_3$
+
+   \textbf{Proof pattern} \\
+
+   Assert $P_1 \lor P_2$ \\
+
+   \textbf{Case 1}: Assert $P_1$
+   \begin{itemize}
+      \item logical / mathematical consequences 
+      \item assert $P_3$
+   \end{itemize}
+
+   \textbf{Case 2}: Assert $P_2$
+   \begin{itemize}
+      \item logical / mathematical consequences 
+      \item assert $P_3$
+   \end{itemize}
+
+   $P_3$ proven assuming $P_1 \lor P_2$
+\end{framed}
+
+\section{Proofs regarding sets}
+\begin{framed}
+   To show $A = B$ for sets $A, B$, show that
+   \begin{itemize}
+      \item $A \subseteq B$
+      \item $B \subseteq A$
+   \end{itemize}
+   
+  
+\end{framed}
+
+
+\section{Combinations}
+
+\begin{framed}
+   Let $A$ be a non-empty set with $n$ elements, and $r$ be a natural number \\
+
+   A combination of $r$ elements from the $n$ elements of $A$ is an \textbf{unordered} selection of $r$ of the $n$ elements of $A$ \\
+
+   A combination is the same as a \textbf{subset} $S$ of $A$ of size $r$ \\
+
+   The number of combinations is given by 
+   \[
+     \begin{pmatrix} n \\ r \end{pmatrix}  = \frac{n!}{r! (n-r)!}
+   \] 
+\end{framed}
+
+\section{Predicates and Quantifiers}
+
+\subsection{Predicates}
+\begin{framed}
+   \textbf{Predicates} are undetermined logical statements because they contain variables whose values are not specified, e.g.
+   \[
+     odd(p), vowel(l)
+   \] 
+\end{framed}
+
+\subsection{Quantifiers}
+\begin{framed}
+   \textbf{Quantifiers} include 
+   \begin{itemize}
+      \item universal quantifiers, $\forall x$
+      \item existential quantifiers, $\exists x$
+   \end{itemize}
+\end{framed}
+
+For all positive integers there is a strictly bigger positive integer that is a prime
+\[
+   \forall x \in \mathbb{Z}^{+} \exists  y \in \mathbb{Z}^+ (y > x) \land prime(y)
+\] 
+
+
+
+

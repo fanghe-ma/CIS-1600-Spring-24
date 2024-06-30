@@ -1,0 +1,72 @@
+\chapter{Module 6 - Induction}
+
+\section{Ordinary Induction}
+\begin{framed}
+
+   \textbf{General case}: to show that $P(n) \forall n \in \mathbb{N}$ \\
+   
+   \textbf{Proof pattern}: \\
+   \textbf{BC}: Show $P(0)$ \\
+   \textbf{IS}: Let $k$ be an arbitrary natural number, assume \textbf{IH} that $P(k)$ is true, show $P(k + 1)$.  \\
+
+   \textbf{Variant case}: to show that $P(n) \forall n > n_0$ 
+   \textbf{Proof pattern}: \\
+   \textbf{BC}: Show $P(n_0)$ \\
+   \textbf{IS}: Let $k$ be an arbitrary natural number $k \geq n_0$, assume \textbf{IH} that $P(k)$ is true, show $P(k + 1)$.  \\
+
+\end{framed}
+
+\subsection{Good to memorize}
+
+\[
+   \sum_{i = 1}^{n} q^n = q^0 + q^1 + \hdots q^n = 
+   \begin{cases}
+      \frac{q^{n + 1} - 1}{q - 1} & \text{ if } q \neq 1 \\
+      n + 1 & \text{ if } q = 1 \\
+   \end{cases}
+   
+\] 
+
+\section{Strong Induction}
+
+\begin{framed}
+Let $n_0 \in \mathbb{N}$  and let $P(n)$ be a predicated defined on all $n \in \mathbb{N}, n \geq n_0$.  \\
+
+\textbf{Proof pattern} \\
+
+\textbf{BC}: Show $P(n_0) $ \\
+
+\textbf{IS}: Let $k \in \mathbb{N}$ such that $ k \geq n_0$, let $j \in [n_0 \hdots k]$, assume $P(j)$, show that  $P(k + 1) $
+\end{framed}
+
+\subsection{Triangular example}
+Prove by strong induction that if a polygon with 4 or more sides is triangulated then at least two of the triangles formed are exterior. 
+
+\section{Recurrence}
+
+\begin{framed}
+   Solving recurrence relations  \\
+   \begin{itemize}
+      \item Guessing the solution for $C(n)$ 
+      \item Analyzing recurrence tree 
+      \item Telescoping method
+   \end{itemize}
+\end{framed}
+
+\subsection{Recurrence relationship Problem 1}
+What is the largest number of pieces of pizza that can be made with $n$ distinct straight cuts?
+
+
+\section{Fibonacci}
+
+\begin{framed}
+   The Fibnacci sequence is defined by
+   \begin{align*}
+      F_0 &= 0 \\
+      F_1 &= 1 \\
+      F_n &= F_{n-1} + F_{n - 2} \text{ for } n \geq 2\\ 
+   \end{align*}
+\end{framed}
+
+
+

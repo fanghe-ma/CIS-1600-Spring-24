@@ -1,0 +1,158 @@
+\chapter{Module 14}
+
+\section{Directed graphs}
+
+\begin{framed}
+   \textbf{Definition}: A directed graph $G = (V, E)$ consists of a non empty set of vertices and a set $E \subseteq V \times V$ of directed edges which are ordered pair of vertices. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: $u, v$ are neighbors when $u \rightarrow v$ and $v \rightarrow u$ 
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: The degree of a node is the sum of its out-degree and in-degree.
+   \begin{framed}
+      \item out-degree: number of successors, denoted $out(u)$
+      \item in-degree: number of predecessors, denoted $in(u)$
+   \end{framed}
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: the sum of out-degrees for all vertices equals the sum of all in-degrees and equals the number of edges. 
+   \[
+      \sum_{v \in V} out(v) = \sum_{v \in V} in(v) = |E|
+   \] 
+   \[
+      \sum_{v \in V} deg(v) = 2 |E|
+   \] 
+\end{framed}
+
+\subsection{Directed walk}
+\begin{framed}
+   \textbf{Definition}: A \textbf{directed walk} of length $k$ is a non-empty sequence $u_0, u_1 \hdots u_k$ such that $u_0 \rightarrow u_1 \hdots u_k$. \\
+
+   A \textbf{directed path} is a directed walk with no repeated vertices. 
+\end{framed}
+
+\subsection{Directed cycle}
+\begin{framed}
+   \textbf{Definition}: A \textbf{directed cycle} is a closed walk $u_0 \rightarrow u_k \rightarrow u_0$, of length $ k + 1$. 
+\end{framed}
+
+
+  
+\end{\subsection{Directed walk}
+\begin{framed}
+   \textbf{Definition}: A \textbf{directed walk} of length $k$ is a non-empty sequence $u_0, u_1 \hdots u_k$ such that $u_0 \rightarrow u_1 \hdots u_k$. \\
+
+   A \textbf{directed path} is a directed walk with no repeated vertices. 
+\end{framed}
+
+\subsection{Directed cycle}
+\begin{framed}
+   \textbf{Definition}: A \textbf{directed cycle} is a closed walk $u_0 \rightarrow u_k \rightarrow u_0$, of length $ k + 1$. 
+\end{framed}
+
+\section{Recheability and strong connectivity}
+
+\begin{framed}
+   \textbf{Definition}: A vertex $v$ is reachable from $u$ if there is a walk from $u $ to $v$. \\
+
+   Reachability is
+   \begin{itemize}
+      \item reflexive
+      \item transitive
+   \end{itemize}
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: Two vertices are strongly connected when $u $ is reachable from $v$ and $v$ is reachable from $u$. \\
+
+   Strong connectivity is 
+   \begin{itemize}
+      \item reflexive
+      \item transitive
+      \item symmetric
+   \end{itemize}
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: The maximally strongly connected set of vertices are called \textbf{strongly connected components}. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Any two distinct SCCs are disjoint.  \\
+
+  SCCs determine a partition of the vertices (but not the edges).  
+\end{framed}
+
+\section{Reduced graphs}
+\begin{framed}
+   \textbf{Definition}: Given $G = (V, E)$, the \textbf{reduced graph} has as vertices the SCCs of $G$ and edges as pairs $(S_1, S_2) $ where $S_1 \neq S_2, $ and $\exist u_1 \in S_1, u_2 \in S_2$ such that $u_1 \rightarrow u_2 \in E$
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: the \textbf{reduced graph} has no directed cycles. 
+\end{framed}
+
+\section{DAGs}
+\begin{framed}
+   \textbf{Definition}: A DAG is a digraph with no directed cycles
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: A \textbf{topological sort} of a digraph is a sequence $\sigma$ in which every vertex appears exactly once such that for any $u \rightarrow v \in V$ in the graph,  $u$ appears in $\sigma$ before  $v$. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: If a graph has a topological sort then
+   \begin{itemize}
+      \item the first vertex is a source and the last is a sink 
+      \item the digraph is a DAG
+   \end{itemize}
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Every DAG has at least once source and at least one sink. \\
+
+   \textbf{Proof}: Consider the directed path of maximum length, p, which goes from $u$ to $v$. Prove by contradiction that if $in(u) \geq 1$, there is some edge $w \rightarrow u$, and consider two cases ($w \in p$ or $w \notin p$)
+\end{framed}
+
+
+\begin{framed}
+   \textbf{Proposition}: Every DAG has at least one topological sort. 
+  
+\end{framed}
+
+
+\section{Binary trees}
+\begin{framed}
+   \textbf{Definition}: A \textbf{rooted tree} is a pair $(T, r)$ where $T = (V, E)$ is a tree and $r \in V$ is designated as a root. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Any edge of a rooted tree is traversed in the \textbf{same direction} by all unique paths from the root to each of the other vertices. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}:  A \textbf{complete binary tree} of height $h$ is a rooted tree in which every non-leaf node has two children and all leaves are at a distance $h$ from $r$. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: A binary tree of height $h$ has maximum of $2^{h + 1 } - 1$ nodes among which $2^h$ are leaves. The maximum is attained for the complete binary tree of height $h$. 
+\end{framed}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

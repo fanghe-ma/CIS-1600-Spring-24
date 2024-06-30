@@ -1,0 +1,242 @@
+\chapter{Graph Theory I}
+
+\section{Terminology}
+\begin{framed}
+   A undirected graph is a pair 
+   \[
+     G = (V, E)
+   \] 
+
+   Where $V$ is a finite non-empty set of vertices \\
+
+   $E \subseq 2^V$ is a finite and possibly empty set of edges. 
+\end{framed}
+
+\subsection{Vertex degree}
+\begin{framed}
+   \textbf{Definition}: The degree of a vertex, $deg(u)$ is the number of neighbors of $u$. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Handshaking Lemma}: the sum of degrees of all nodes in a graph is twice the number of edges
+   \[
+      \sum_{v \in V} deg(v) = 2 |E|
+   \] 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: In any graph, there are an even number of vertices of odd degree \\
+
+
+   \textbf{Proof}: Consider $V = V_e \cup V_o$, $V_e \cap V_o = \emptyset$ . 
+
+   \[
+      \sum_{v \in V} deg(v) = \sum_{v \in V_e} deg(v) + \sum_{v \in V_o} deg(v)
+   \] 
+  
+\end{framed}
+
+\section{Special Graphs}
+
+\subsection{Edgeless}
+\begin{framed}
+   An \textbf{edgeless } graph is $G = (V, E)$ where
+   \[
+     E = \emptyset
+   \] 
+   \[
+     |E| = 0
+   \] 
+\end{framed}
+
+
+\subsection{Complete}
+
+\begin{framed}
+   A \textbf{complete} graph is 
+   \[
+     K_n = (V, E) \text{ where } n \geq 1
+   \] 
+   \[
+     |V| = n
+   \] 
+   \[
+     |E| = \begin{pmatrix} n //2 \end{pmatrix} 
+   \] 
+  
+\end{framed}
+
+\subsection{Paths}
+\begin{framed}
+   A path graph is denoted  
+   \[
+     P_n = (V, E)
+   \] 
+
+   where
+   \[
+     |V| = n
+   \] 
+   Note that for a path graph, 
+   \[
+     |E| = n - 1
+   \] 
+
+   Note that for $ n \geq 3$ 
+   \[
+     \left| \{ v \in V : deg(v) = 1 \}  \right|  = 2
+   \] 
+   \[
+     \left| \{ v \in V : deg(v) = 2 \}  \right|  = n - 2
+   \] 
+  
+\end{framed}
+
+
+\subsection{Cycles}
+\begin{framed}
+   A cycle is denoted
+   \[
+     C_n = (V, E) \text{ for } n \geq 3
+   \] 
+
+
+   Note that
+   \[
+     \forall v \in V, deg(v) = 2
+   \] 
+   \[
+     C_n \implies \text{ all vertices have degree two}
+   \] 
+   but the converse is not true
+\end{framed}
+
+\subsection{Grids}
+\begin{framed}
+   A grid has $m$ rows and $n$ columns \\
+
+   When  $m, n \geq 3$, 
+   \[
+    \left| \{ v \in V : deg(v) = 2 \}  \right|  = 4
+   \] 
+   \[
+    \left| \{ v \in V : deg(v) = 3 \lor deg(v) = 4\}  \right|  = m \times n - 4
+   \] 
+
+   Note that the number of edges 
+   \[
+      |E_{horizontal} | = m(n-1)
+   \] 
+   \[
+      |E_{vertial} | = n(m-1)
+   \] 
+
+   \[
+     |E| = m(n-1) + n(m-1) 2mn -m - n
+   \] 
+\end{framed}
+
+\section{Walks and paths} 
+
+\begin{framed}
+   \textbf{Definition}: A walk is a non-empty sequence of vertices consecutively linked by edges
+   \[
+     u_0, u_1 \hdots u_k
+   \] 
+
+   such that
+   \[
+      u_0 - u_1 - \hdots u_k
+   \] 
+
+   We say that 
+   \begin{itemize}
+      \item $u_0, u_k$ are the endpoints of the walk
+      \item $u_0, u_k$ are connected by this walk
+      \item the length of the walk is $k$ (there are $k + 1$ nodes)
+   \end{itemize}
+
+   Note that a single vertex is a walk of length $0$
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: A path is a walk with all vertices distinct. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: When there is a walk from $u_0$ to $u_n$ of length $n \geq 3$, and  $u_0 \neq u_n$, then there exists vertices $v_1 \hdots v_m$ such that $u_0 - v_1 - \hdots v_m - u_n$ is a path of length $\leq n$ \\
+
+   Alternatively, there exists a path whose sequence of nodes and edges are a subsequence of the sequence of nodes and edges in the walk. 
+\end{framed}
+
+
+\section{Connected Components}
+
+\begin{framed}
+   \textbf{Definition}: two vertices $u, v $ of graph $G = (V, E)$ are said to be \textbf{connected} if there exists some walk with endpoints $u, v$. \\
+
+   Note that connectivity is
+   \begin{itemize}
+      \item transitive
+      \item reflexive
+      \item symmetric
+   \end{itemize}
+\end{framed}
+
+\begin{framed}
+   A \textbf{CC} of $G = (V, E)$ is a set of vertices $C \subseteq V$ such that
+   \begin{itemize}
+      \item any two vertices in $C$ are connected 
+      \item there is no strictly bigger set of vertices $C \subset C' \subseteq V$ such that any two vertices in $C'$ are also connected 
+   \end{itemize}
+   $C$  is a maximally connected set of vertices in $G$
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: any two distinct CCs are disjoint
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: A \textbf{connected graph} is a graph with exactly one connected component
+   \[
+     |CC| = 1
+   \] 
+  
+\end{framed}
+
+\section{Counting CCs}
+\begin{framed}
+   \textbf{Proposition}: For any graph $G = (V, E)$
+   \[
+     |V| - |E| \leq |CC| \leq |V|
+   \] 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: For any graph $G = (V, E)$
+    \[
+     |V| - |CC| \leq |E| \leq \begin{pmatrix} n \\2 \end{pmatrix} 
+   \] 
+\end{framed}
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

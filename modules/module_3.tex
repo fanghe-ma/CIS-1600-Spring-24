@@ -1,0 +1,150 @@
+\chapter{Module 3}
+
+\section{Stars and Bars}
+
+Stars and bars are used to count the number of ways to distribute $n$ \textbf{indistinguishable} objects into $r$ distinguishable categories, given by
+\[
+  \begin{pmatrix} 
+    n + r - 1 \\ r - 1  
+  \end{pmatrix}
+\] 
+
+\section{Negating statements}
+
+To disprove a statement $P$ is to prove its negation $\lnot P$ 
+
+\subsection{Negation of disjunction / conjunction}
+
+\textbf{IMPT!!}
+\[
+  \text{the negation of disjunction is conjunction}
+\] 
+\[
+  \lnot( P_1 \land P_2) = (\lnot P_1) \lor (\lnot P_2)
+\] 
+
+
+\[
+  \text{the negation of conjunction is disjunction}
+\] 
+\[
+  \lnot( P_1 \lor P_2) = (\lnot P_1) \land (\lnot P_2)
+\] 
+
+\subsection{Negation of quantifiers}
+
+\[
+  \text{the negation of universal is existential}
+\] 
+\[
+  \lnot(\forall x P(x)) = \exists x \lnot P(x)
+\] 
+
+\[
+  \text{the negation of existential is universal}
+\] 
+\[
+  \lnot(\exists x P(x)) = \forall x \lnot P(x)
+\] 
+
+\subsection{Negation of implication}
+\[
+  \text{The negation of "if premise then conclusion" is premise and the negation of the conclusion}
+\] 
+\[
+  \lnot(P_1 \Rightarrow P_2) = P_1 \land \lnot P_2
+\] 
+
+\section{Converse and Contrapositive}
+
+Given an implication
+\[
+   P_1 \Rightarrow P_2 \text{ (if $P_1$ then $P_2$)}
+\] 
+
+The \textbf{converse} is
+\[
+  P_2 \Rightarrow P_1 \text{ (if $P_2$ then $P_1$)}
+\] 
+
+The \textbf{contrapositive} is 
+\[
+  \lnot P_2 \Rightarrow \lnot P_1 \text{ (if not $P_2$ then not $P_1$)}
+\] 
+
+\textbf{NOTE} that the contrapositive is \textbf{logically equivalent} to the original implication
+
+\section{Truth tables}
+
+\begin{center}
+   \begin{tabular}{| c | c | c | c | c |}
+      $p$ & $q$ & $p \land q$ & $p \lor q$ & $p \Rightarrow q$ \\
+      T & T & T & T & T \\
+      T & F & F & T & F \\
+      F & T & F & T & T \\
+      F & F & F & F & T
+   \end{tabular}
+\end{center}
+
+
+\section{Vacuous implications}
+
+Note that is the premise is false then the implication is true, regardless of the conclusion. \\ 
+
+False implies everything \\
+
+Implications where premise is always false is said to \textbf{hold vacuously}
+
+\section{Prove by contrapositive}
+
+Instead of proving 
+ \[
+  p \Rightarrow q
+\] 
+
+we prove
+\[
+  \lnot q \Rightarow \lnot p
+\] 
+
+\section{Logical equivalence}
+
+Two boolean expressions are \textbf{logically equivalent} if they yield the same truth value for the same truth assignments to their variables
+
+\begin{align*}
+   p \Rightarrow q & \equiv \lnot q \Rightarrow \lnot p \quad \text{ Contrapositive} \\
+   p \lor q \Rightarrow r &\equiv (p \Rightarrow r) \land (q \Rightarrow r) \quad \text{ By-cases} \\
+   p \Rightarrow q & \equiv \lnot p \lor q \quad\text{ Law of Implication} \\
+   \lnot (p \Rightarrow q) & \equiv p \land \lnot q \quad\text{ Disproving implication} \\
+   \lnot (p \lor q) & \equiv \lnot p \land \lnot q \quad\text{ De Morgan's Law I} \\
+   \lnot (p \land q) & \equiv \lnot p \lor \lnot q \quad\text{ De Morgan's Law II} \\
+   \lnot \lnot p & \equiv p \quad \text{ Law of Double Negation}
+\end{align*}
+
+\section{Proofs by contradiction}
+
+\subsection{Proofs by contradiction I}
+\begin{framed}
+A statement $P$ and  $\lnot P$ is called a contradiction, and is always false. \\ 
+
+To prove $P$, we prove instead that  if (not $P$ ) then $C$, where $C $ is a contradiction.
+\end{framed}
+
+\subsection{Proofs by contradiction II}
+
+\begin{framed}
+To prove if $P$ then $Q$, we can instead prove if  $P$ and not $Q$ then $C$
+\[
+  p \Rightarrow q \equiv p \land \lnot q \Rightarrow F
+\] 
+\end{framed}
+\section{Permutations}
+
+
+The number of permutations of a multiset is
+\[
+   \frac{n_{total}!}{n_1! n_2! \hdots n_k!}
+\] 
+
+
+

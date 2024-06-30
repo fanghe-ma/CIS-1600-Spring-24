@@ -1,0 +1,138 @@
+\chapter{Module 4}
+
+\section{Binomial Theorem}
+
+The binomial coefficient is \[
+  \begin{pmatrix} n \\ r \end{pmatrix} 
+\] 
+
+The binomial theorem states that for any real $a, b$, and any natural number $n$, 
+\[
+   (a + b)^n = \begin{pmatrix} n \\ 0 \end{pmatrix} a^n + \begin{pmatrix} n \\1  \end{pmatrix} a^{n-1}b + \hdots \begin{pmatrix} n \\n \end{pmatrix} b^n = \sum_{i = 0}^{n} \begin{pmatrix} n \\ i  \end{pmatrix} a^{n-i}b^i
+\] 
+
+\section{Combinatorial proofs}
+
+A combinatorial identity
+\[
+  \begin{pmatrix} n \\ r \end{pmatrix}  = \begin{pmatrix} n \\ n - r \end{pmatrix} 
+\] 
+
+Pascal's identity
+\[
+  \begin{pmatrix}  n \\ k \end{pmatrix}  = \begin{pmatrix} n - 1 \\k - 1 \end{pmatrix}  + \begin{pmatrix} n - 1 \\k \end{pmatrix} 
+\]  
+
+\section{Functions}
+
+\begin{framed}
+   \textbf{Definition} A function or a mapping denoted $f : A \rightarrow B$ consists of 
+   \begin{itemize}
+      \item set $A$, called \textbf{ domain}
+      \item set $B$, called \textbf{ codomain}
+      \item a mapping, or a way of associating \textbf{every} element of domain with a unique element of the codomain \[
+        x \in A, f(x) \in B
+      \] 
+   \end{itemize}
+
+   The \textbf{range} of a function $f:B \rightarrow B$ is
+   \[
+     Ran(f) = \{  y | y \in B \land \exists x \in A\ y = f(x) \} 
+   \] 
+
+   Note that
+   \[
+     Ran(f) \subseteq B
+   \] 
+\end{framed}
+
+\subsection{Set of all functions}
+
+Given two  sets  $A, B$, the set
+\[
+   \{ f | f: A \rightarrow B \} \text{ is denoted by} B^A
+\] 
+
+If $|A| = r$ and $|B| = n$, then the number of different functions with domain $A$ and codomain $B$ is
+ \[
+    |B^A| = |B|^{|A|} = n^r
+\] 
+
+If $|A| = |B| = |C| = n$, how many functions are there with domain  $B^A$ and codomain $2^C$? \\
+
+Such functions map functions in $B^A$ to the superset of $C$
+
+\[
+   |2^{C^{B^A}}| = |2^C|^{|B^A|} = 2^{n^{n^n}} = 2^{n^{n+1}}
+\] 
+
+
+\section{Integer intervals}
+
+\begin{framed}
+   \textbf{Definition}: An integer interval $[m \hdots n]$ ($m < n$ ) is the set of all integers that lay between $m, n$ inclusive
+   \[
+      [m \hdots n] = \{  k \in \mathbb{Z} | m \leq m \leq n \} 
+   \] 
+\end{framed}
+
+\section{Surjections and injections}
+
+\subsection{Surjective functions}
+
+\begin{framed}
+   \textbf{Definition}: A function $f: A \rightarrow B$ is surjective if $Ran(f) = B$, or that for every  $y \in B$ there exists $x \in A$ such that $y = f(x) $ \\
+
+
+   Method of proof: 
+   \begin{itemize}
+      \item show that for every $y \in B$, there is some $x \in A$ such that $f(x) = y$
+   \end{itemize}
+\end{framed}
+
+\subsection{Injective functions}
+
+\begin{framed}
+   A function $f: A \rightarrow B$ is injective if it maps distinct elements to distinct elements, i.e. 
+   \[
+     \text{ for every } x_1 \neq x_2 \text{ in the domain we have } f(x_1) \neq f(x_2)
+   \]  or
+   \[
+     \text{ for every }x_1, x_2 \in A, f(x_1) = f(x_2) \implies x_1 = x_2
+   \] 
+
+   Method of proof: 
+   \begin{itemize}
+      \item show that for every $x_1 \neq n_2$ then $f(x_1) \neq f(x_2)$
+      \item show that for every $x_1, x_2$, $f(x_1) = f(x_2) \implies x_1 = x_2$
+   \end{itemize}
+\end{framed}
+
+\subsection{Surjection \& injection rules}
+
+\begin{framed}
+   \textbf{Surjection rule} \\
+
+   \textbf{Variant 1}: if we can define a surjective function with domain $A$ and codomain $B$ then
+   \[
+     |A| \geq |B|
+   \] 
+   \textbf{Variant 2}: if we can define a function $f: A \rightarrow B$ then 
+   \[
+     |A| \geq |Ran(f)|
+   \] 
+
+   \textbf{Variant 3} If $f: A \rightarrow B$ then $f' : A \rightarrow Ran(f) $ where $f'(x) = f(x) $ is surjective
+\end{framed}
+
+\begin{framed}
+   \textbf{Injection rule} :
+
+   \textbf{Variant 1} If we ca define an injective function with domain $A$ and codomain $B$ then
+   \[
+     |A| \leq |B|
+   \] 
+\end{framed}
+
+
+

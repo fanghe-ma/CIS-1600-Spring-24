@@ -1,0 +1,172 @@
+\chapter{Module 5}
+
+
+\section{Bijections}
+
+\begin{framed}
+   \textbf{Definition}: A function $f: A \rightarrow B$ is bijective if it is both injective and surjective. It is also called a \textbf{bijection} or \textbf{one-one} correspondence. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Bijection rule}: 
+
+   \textbf{Variant 1}: if we can define a bijective function with domain $A$ and codomain $B$ then
+   \[
+     |A| = |B|
+   \] 
+   \textbf{Variant 2}: If we cna define an injective function $f: A \rightarrow B$ then
+   \[
+     |A| = |Ran(f)|
+   \] 
+   \textbf{Variant 3}: If $f: A \rightarrow B$ is injective then $f': A \rightarrow Ran(f)$ where $f'(x) = f(x)$ is bijective.
+\end{framed}
+
+
+\section{Counting surjections, injections, and bijections}
+
+\subsection{Counting injections}
+For $A, B$ $|A| = r$, $|B| = n$, for  $r > n$, the number of injections is
+ \[
+  \frac{n!}{(n-r)!}
+\] 
+
+\subsection{Counting bijections}
+
+For $A, B$, $|A|  = |B| = n$, the number of bijections is
+ \[
+  n!
+\] 
+
+\subsection{Counting surjections}
+
+For $A, B$, there are only surjections when $|A| \geq |B|$. In the case $|B| = 2$, the number of surjections is the total number of functions minus the number of functions that are not surjections. \\
+
+\[
+  |B^A| - |F_0 \cup F_1| 
+\] 
+
+where 
+\[
+  |B^A| = n^r = 2^r
+\] 
+
+\[
+  |F_0| = \left| \{ f : A \rightarrow \{ 0, 1 \} | 0 \notin Ran(f) \}  \right|  = 1
+\] 
+
+\[
+  |F_1| = \left| \{ f : A \rightarrow \{ 0, 1 \} | 1 \notin Ran(f) \}  \right|  = 1
+\] 
+
+
+Hence the answer is 
+\[
+  2^r - 2
+\] 
+
+\section{Inclusion - Exclusion for Cardinality}
+
+\begin{framed}
+   For any $A, B$, 
+   \[
+     |A \cup B| = |A| + |B| - |A \cap B|
+   \] 
+
+   For three sets,
+   \begin{align*}
+      |A \cup B \cup C| &= |A| + |B| + |C|  \\
+                        &- |A \cap B| - |B \cap C| - |A \cap C| \\
+                        &+ |A \cap B \cap C|
+   \end{align*}
+  
+\end{framed}
+
+\section{Derangements}
+
+The number of derangements for $n$ items is
+\[
+   n! \sum_{k = 0}^{n} \frac{(-1)^k}{k!}
+\] 
+
+
+\section{Pigeonhole Principle}
+
+\begin{framed}
+   \textbf{Pigeonhole Principle}: Let $f: A \rightarrow B$ be a function. If $|A| > |B|$ then there exist at least two elements, $x_1, x_2 \in A$ such that $x_1 \neq x_2$ but $f(x_1) = f(x_2)$ \\
+
+   i.e. if $|A| > |B|$ then $f$ is not injective
+\end{framed}
+
+\begin{framed}
+   \textbf{Generalized Pigenhole Principle}: Let  $f: A \rightarrow B$ and $k \in \mathbb{Z}^+$. If $|A| > k|B|$ then there exist at least $k + 1$ pairwise distinct elements that $f$ maps onto the same element in $B$. \\
+
+   $r$ objects into $n$ boxes. For any integer $k$ such that
+   \[
+      r > k n
+   \] 
+   There is at least a box containing at least $k + 1$ objects
+  
+\end{framed}
+
+\subsection{Example 1}
+
+Sums of consecutive subsequences \\
+
+\textbf{Problem}: Given any sequence $n$ integers show that we can always pick some subsequence which appear in consecutive positions in the sequence and whose sum is a multiple of $n$. \\
+
+\textbf{Solution}: Let 
+\[
+  x_1 \hdots x_n
+\] 
+be the sequence of $n$ integers. \\
+
+Consider the following $n$ sums
+\begin{align*}
+   s_1 &= x_1 \\
+   s_2 &= x_1  + x_2\\
+   \vdots & \\
+   s_n &= x_1  + x_2 + \hdots + x_n\\
+\end{align*}
+
+Case 1: some $s_i \in \{ s_1 \hdots s_n \} $ is divisible by $n$, then we are done \\
+
+Case 2: none of $s_i$ is divisible by $n$. \\
+
+Let $r_i$ be the remainder of the integer division $s_i$ by $n$ for $i \in [1 \hdots n]$, each  $r_i \neq 0$. \\
+
+There are  $n-1$ possible non-zero remainders. \\
+
+There are a total of $n$ items in $r_i$. By PHP, with  $r_1 \hdots r_n$ $n$ pigeons and $n-1$ pigeonholes, there exists distinct $p, q$ such that $r_p = r_q$. \\
+
+ \begin{align*}
+    s_p &= kn + r_p \\
+    s_q &= ln + r_q \\
+\end{align*}
+
+WLOG assuming $p < q$,  
+\[
+  s_q - s_p = (l - k) n
+\] 
+
+\subsection{Problem 2}
+\textbf{Theorem}: In any group of 6 facebook users, there are 3 that are pairwise friends or $3$ that are pairwise strangers. \\
+
+\textbf{Proof}: Let $A, B, \hdots F$ be six users. \\
+
+Each  $B \hdots F$ is either friends with $A$ or not. \\
+
+Apply PHP, assign $5$ users into two categories, since $5 > 2 \tiems 2$, at least one category has 3 users. \\
+
+WLOG, let these 3 be $B, C, D$. Consider two cases. \\
+
+\textbf{Case 1}: $B, C, D$ strangers with $A$.\\
+
+\textbf{1.1} $B, C, D$ pairwise friends, done \\
+\textbf{1.2} $B, C, D$ not pairwise friends, hence at least 2 are strangers. Say $B, C$, then, $A, B, C$ pairwise strangers. \\
+
+\textbf{Case 2}: By symmetry.
+
+
+
+
+

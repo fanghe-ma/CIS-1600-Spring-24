@@ -1,0 +1,94 @@
+\chapter{Probability}
+
+\section{Probability space}
+
+\begin{framed}
+   A \textbf{probability space } $(\Omega, Pr)$ consists of
+    \begin{itemize}
+       \item a finite non-empty set  $\Omega$ of outcomes
+       \item a probability distribution function
+          \[
+             Pr: \Omega \rightarrow [0, 1]
+          \] 
+          that associates with each outcome $\omega \in \Omega$ its probability  $Pr[\omega]$ such that 
+           \[
+              \sum_{\omega \in \Omega} Pr[\omega] = 1
+          \] 
+   \end{itemize}
+
+   An event is a subset of the space of all outcomes  $E \subseteq \Omega$. 
+    \[
+       Pr[E] = \sum_{\omega \in E} Pr[\omega]
+   \] 
+\end{framed}
+
+
+\section{Uniform space}
+\begin{framed}
+   A probability space $(\Omega, Pr)$ is uniform if all the outcomes have the same probability. \\
+
+    Denote $n = |\Omega|$, then for each  $\omega \in \Omega$,
+    \[
+       Pr[\omega] = \frac{1}{n}
+    \] 
+    For any event
+    \[
+       Pr[E] = \frac{|E|}{|\Omega|}
+    \] 
+  
+\end{framed}
+
+\section{Bernoulli Trials}
+\begin{framed}
+   A \textbf{Bernoulli trial} corresponds to a probability space with two outcomes, with probability of success $p$ and probability of failure $1 - p$
+\end{framed}
+
+\section{Probability Properties}
+
+\begin{framed}
+   \textbf{Property 0}
+   \[
+      Pr[E] \geq 0
+   \] 
+
+   \textbf{Property 1}
+   \[
+      Pr[\Omega] = 1
+   \] 
+
+   \textbf{Property 2}: If $A, B$ disjoint then 
+   \[
+      Pr[A \cup B] = Pr[A] + Pr[B]
+   \]  
+
+   If $A_1 \hdots A_n$ pairwise disjoint then
+   \[
+      Pr[A_1 \cup \hdots A_n ] = Pr[A_1] + \hdots Pr[A_n]
+   \] 
+   \textbf{Property 3}: If $A \subseteq B$ then
+   \[
+      Pr[A] \leq Pr[B]
+   \] 
+   \textbf{Property 4}
+   \[
+      Pr[\overline{E}] = 1 - Pr[E]
+   \] 
+   \textbf{Property 5}
+   \[
+      Pr[\emptyset] = 0
+   \] 
+
+   \textbf{Property 6}
+   \[
+      Pr [ A \cup B] = Pr[A] + Pr[B] - Pr[A \cap B]
+   \] 
+   \textbf{Property 7}
+   \[
+      Pr[A \cup B] \leq Pr[A] + Pr[B]
+   \] 
+   \[
+      Pr[A_1 \cup \hdots A_n] \leq Pr[A_1] + \hdots Pr[A_n]
+   \] 
+  
+\end{framed}
+

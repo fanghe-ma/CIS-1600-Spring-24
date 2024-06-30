@@ -1,0 +1,224 @@
+\chapter{Module 12}
+
+\section{Graph Isomorphism}
+
+\begin{framed}
+   \textbf{Definition}: Two graphs $G_1 = (V_1, E_1)$  and $G_2 = (V_2, E_2)$ are isomorphic if there is a bijection $\beta :V_1 \rightarrow V_2$ such that for any $u_1, v_1 \in V_1$, 
+   \[
+     u_1 -v_1 \in E_1 \iff \beta(u_1) - \beta(u_2) \in E_2
+   \] 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: any two complete graphs are isomorphic iff
+   \[
+     |V_1| = |V_2| 
+   \]
+
+   \textbf{Proposition}: any two cycle graphs are isomorphic iff
+   \[
+     |V_1| = |V_2|
+   \] 
+
+   \textbf{Proposition}: any two path graphs are isomorphic iff
+   \[
+     |V_1| = |V_2|
+   \] 
+
+   \textbf{Proposition}: any two $m \times n$ grids are isomorphic, and they are isomorphic to any $n \times m$ grids as well
+\end{framed}
+
+\begin{framed}
+   A path graph on $n$ vertices is a graph isomorphic to $P_n$ \\
+
+   A path graph of length  $l$ is a graph isomorphic to $P_{l + 1}$
+\end{framed}
+
+\section{Subgraphs}
+\begin{framed}
+  \textbf{Definition}:  A graph $G_1 = (V_1, E_1)$ is a subgraph of $G_2 = (V_2, E_2)$ when
+   \[
+     V_1 \subseteq V_2 \] 
+     \[
+       E_1 \subseteq E_2
+     \] 
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: Given $G = (V, E)$ and $V' \subseteq V$, there is a subgraph  $G'$ induced  by $V'$ where
+       \[
+        G' = (V', E')
+      \] 
+
+      and $E'$ consists of all edges of $G$ whose endpoints are both in $V'$. 
+\end{framed}
+
+\section{Counting paths}
+
+
+\begin{framed}
+   \textbf{Definition}: Two graphs $G_1 = (V_1, E_1)$  and $G_2 = (V_2, E_2)$ are isomorphic if there is a bijection $\beta :V_1 \rightarrow V_2$ such that for any $u_1, v_1 \in V_1$, 
+   \[
+     u_1 -v_1 \in E_1 \iff \beta(u_1) - \beta(u_2) \in E_2
+   \] 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: any two complete graphs are isomorphic iff
+   \[
+     |V_1| = |V_2| 
+   \]
+
+   \textbf{Proposition}: any two cycle graphs are isomorphic iff
+   \[
+     |V_1| = |V_2|
+   \] 
+
+   \textbf{Proposition}: any two path graphs are isomorphic iff
+   \[
+     |V_1| = |V_2|
+   \] 
+
+   \textbf{Proposition}: any two $m \times n$ grids are isomorphic, and they are isomorphic to any $n \times m$ grids as well
+\end{framed}
+
+\begin{framed}
+   A path graph on $n$ vertices is a graph isomorphic to $P_n$ \\
+
+   A path graph of length  $l$ is a graph isomorphic to $P_{l + 1}$
+\end{framed}
+
+\section{Subgraphs}
+\begin{framed}
+  \textbf{Definition}:  A graph $G_1 = (V_1, E_1)$ is a subgraph of $G_2 = (V_2, E_2)$ when
+   \[
+     V_1 \subseteq V_2 \] 
+     \[
+       E_1 \subseteq E_2
+     \] 
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: Given $G = (V, E)$ and $V' \subseteq V$, there is a subgraph  $G'$ induced  by $V'$ where
+       \[
+        G' = (V', E')
+      \] 
+
+      and $E'$ consists of all edges of $G$ whose endpoints are both in $V'$. 
+\end{framed}
+
+\section{Counting paths}
+Counting paths of length $n$ in a graph is the same as counting the number of subgraphs that are path graphs on $n + 1$ vertices. \\
+
+\subsection{Counting paths in cycles}
+
+Each vertex in $C_n$ is uniquely associated with a path of length $2$, there is a bijection from the set of vertices to the set of all $P_2$
+
+\section{Cycles}
+\begin{framed}
+   \textbf{Definition}: A closed walk is a walk in which the first and last vertex are the same. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: A cycle is a closed walk of length at least 3 in which all nodes are pairwise distinct, except for first and the last.
+\end{framed}
+
+\subsection{Counting cycles}
+
+In a connected graph, 
+
+Counting cycles of length $3$ : any 3 vertices form a distinct cycle. \\
+
+Counting cycles of length $4$ : any 4 vertices form 3 distinct cycles
+
+Counting cycles of length $5$ :
+\begin{itemize}
+   \item choose $5$ nodes
+   \item starting from node $1$, pick 2 adjacent edges, let end points be $u, v$
+   \item pick a path of length  $3$ from $u$ to $v$, not going through node $1$
+\end{itemize}
+
+\section{Forests, Trees, Leaves}
+
+\subsection{Trees and forests}
+\begin{framed}
+   \textbf{Definition}: A graph that is both acyclic and connected is a \textbf{tree}.  \\
+
+   An acyclic graph is a forests since each connected component in an acyclic graph is a tree. \\
+\end{framed}
+
+
+\begin{framed}
+   \textbf{Proposition}: If $G= (V, E)$ is a tree then
+   \[
+     |E| = |V| - 1
+   \] 
+
+   Any tree with $n$ vertices has $n - 1$ edges. \\
+
+   \textbf{Proof}: by induction on the number of vertices. 
+\end{framed}
+
+\subsection{Leaves}
+
+\begin{framed}
+   \textbf{Definition}: A leaf is a node with degree $1$. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Every tree with edges has at least once leaf. \\
+
+   \textbf{Proof}: Consider the set of paths, by Well Ordering Principle, there exists a path of maximum length. Claim that the end points of this maximum path are leaves. Suppose towards a contradiction that they are not then the path can be extended by $1$ since there are no cycles. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Removing a leaf from a tree results in a tree. \\
+
+   \textbf{Proof}: Resulting graph is still acyclic and connected
+\end{framed}
+
+\section{Properties of trees}
+
+\subsection{Any edge is cut edge}
+\begin{framed}
+   \textbf{Proposition}: Removing any edge from a tree disconnects tree. \\
+
+   \textbf{Proof}: prove using the property that \textbf{tree with $n$ vertices has $n - 1$ edges}. Removing an edge results in graph not being a tree. Graph is still acyclic, hence it must be disconnected. 
+\end{framed}
+
+\subsection{Trees are maximally acyclic}
+
+\begin{framed}
+   \textbf{Proposition}: Adding an edge between \textbf{any} two non-adjacent vertices in a tree creates a cycle. \\
+
+   \textbf{Proof}: Any two vertices are connected. Adding an edge creates two distinct paths. 
+\end{framed}
+
+\subsection{Trees are unique-path connected}
+\begin{framed}
+   \textbf{Proposition}: Any two distinct vertices of a tree are connected by a unique path. \\
+
+   \textbf{Proof}: Prove by contradiction, using lemma below
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Adding an edge to an acyclic graph creates at most one cycle.
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Any graph such that two distinct vertices are connected by a unique path must be a tree. \\
+\end{framed}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

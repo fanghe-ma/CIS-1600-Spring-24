@@ -1,0 +1,164 @@
+\chapter{Module 13}
+
+\section{Spanning Trees}
+
+\begin{framed}
+   \textbf{Definition}: A spanning subgraph of $G = (V, E)$ is a subgraph whose vertex set is $V$. \\
+
+   A spanning tree of a connected graph $G$ is a spanning subgraph that is a tree. \\
+
+   A spanning forest of a graph $G$ consist of a spanning tree for each CC of $G$. 
+\end{framed}
+
+\subsection{Existence of spanning trees}
+
+\begin{framed}
+   \textbf{Proposition}: Every connected graph has a spanning tree. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Removing a cut edge increases the number of connected components by exactly one. 
+\end{framed}
+
+
+\section{Graph coloring}
+
+\subsection{Definitions}
+
+\begin{framed}
+   \textbf{Definition}: For $G = (V, E)$ and some $k \in \mathbb{Z}+$, a \textbf{k-coloring} of $G$ is a function $f : V \rightarrow [1 \hdots k]$ 
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: A coloring is \textbf{proper} when 
+   \[
+     \forall (u-v) \in E, f(u) \neq f(v)
+   \] 
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: A graph is k-colorable if it admits a proper k coloring.  k-colorable implies j-colorable for $j > k$. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: The smallest $k$ such that $G$ is k-colorable is called the \textbf{chromatic number} of $G$, denoted $\chi(G)$ 
+  
+\end{framed}
+
+
+\subsection{Chromatic number of graphs} 
+\begin{framed}
+   \textbf{Proposition}: Only edgeless graphs are $1$-colorable
+   \[
+     \chi(G) = 1 \iff E = \emptyset
+   \] 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: path graphs are 2-colorable
+   \[
+     \forall n \geq 2, \chi(P_n) = 2
+   \] 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Word graphs are 2 or 3 colorable depending on the parity of number of indices 
+   \[
+     \chi(C_n) = 
+     \begin{cases}
+        2 \text{ if } even(n) \\
+        3 \text{ if } odd(n) \\
+     \end{cases}
+   \] 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Connected graphs are $n$-colorable. \\
+   \[
+     \chi(K_n) = n
+   \] 
+   \textbf{Proof}: prove by contradiction that if  $K_n$ is m-colorable for some $m < n$, then at least 2 vertices have the same color, but the two vertices are adjacent. 
+\end{framed}
+
+\subsection{Bipartite graphs}
+
+\begin{framed}
+   \textbf{Definition}: 2-colorable graphs are called \textbf{bipartite}. 
+  
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Every path graph is bipartite.
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: Every cycle graph with even number of vertices is bipartite.
+\end{framed}
+
+\begin{framed}
+  \textbf{Proposition}: Every tree is bipartite.  \\
+
+  \textbf{Proof}: By induction on the number of vertices
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: A graph is \textbf{bipartite} iff it does not contain a cycle of odd length.
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: If $S$ is a subgraph of $G$ then 
+   \[
+     \chi(S) \leq \chi(G)
+   \] 
+
+   Or, every subgraph of a bipartite graph is bipartite. 
+\end{framed}
+
+\subsection{Distance in a connected graph}
+\begin{framed}
+   \textbf{Definition}: The distance between two vertices $u, v \in V$, denoted $d(u, v)$ is the length of the shortest path from $u$ to $v$. 
+   \begin{itemize}
+      \item $d(u, u) = 0$
+      \item $d(u, v) = d(v, u)$
+      \item $d(u, v) \leq d(u, w) + d(w, v)$
+   \end{itemize}
+\end{framed}
+
+
+\section{Cliques and independent sets}
+
+\begin{framed}
+   \textbf{Definition}: A \textbf{clique} of $G$ denotes the complete subgraph of $G$ or a subset of $V' \subseteq V$ such that it induces a complete subgraph. \\
+
+   A \textbf{clique} is a subset of vertices such that any two are adjacent. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Definition}: A \textbf{independent set} is a subset of vertices $V' \subseteq V$ such that no two vertices are adjacent. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: A graph is k-colorable if its set of vertices can be partitioned into $k$ independent sets. 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: The complement of $G = (V, E)$ is $\overline{G}= (V, \overline{E)}$ where
+   \[
+     \overline{E} = \{ (u, v) : u, v \in V \land u\neq v \land (u, v) \notin E \} 
+   \] 
+\end{framed}
+
+\begin{framed}
+   \textbf{Proposition}: A subset $V' \subseteq V$ is a clique in $G$ iff it is an independent set in $\overline{G}$. 
+\end{framed}
+
+
+
+
+
+
+
+
+
+
+

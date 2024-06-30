@@ -1,0 +1,242 @@
+\chapter{Module 1}
+
+\section{Addition and Multiplication Rules}
+
+\subsection{Addition Rule}
+\begin{framed}
+   \textbf{Theorem}: For objects that can be classified into $k$ distinct kinds, with the i-th kind having $n_i$ objects, the total number of objects is
+   \[
+      \sum_{i=1}^{k} n_i = n_1 + n_2 + \hdots n_k
+   \] 
+\end{framed}
+
+
+\subsection{Multiplication rule}
+\begin{framed}
+   \textbf{Theorem}: For a procedure that can be broken down into $k$ steps, where each step is independent of all other steps, and the $i-th$ step can be performed in $n_i$ ways
+   \[
+      \prod_{i=1}^{k} n_i = n_1 \times n_2 \times \hdots n_k
+   \] 
+\end{framed}
+
+\section{Parity-based proofs}
+
+\subsection{Odd and Even}
+\begin{framed}
+   \textbf{Definition}: An integer $n$ is even when $n = 2k$ for \textit{some} integer $k$
+   \[
+     \{ 0, 2, 4 \hdots \} 
+   \] 
+   \textbf{Definition}: An integer $n$ is odd when $n = 2k + 1$ for \textit{some} integer $k$
+   \[
+     \{ 1, 3, 5 \hdots \} 
+   \] 
+\end{framed}
+
+\section{Divisibility and Primes}
+
+\subsection{Divisibility}
+
+\begin{framed}
+
+   \textbf{Definition}: The positive integer $d$ is a divisor or factor of an integer $n$ when 
+$n = d \times k$ for some integer $k$ \\
+
+\[
+  \text{$d$ is a divisor of $n$} \iff \text{$d$ divides $n$} \iff d | n
+\] 
+\end{framed}
+
+\subsection{Primes}
+
+\begin{framed}
+   \textbf{Definition}: An integer $p$ is a prime when $p$ has exactly two positive factors, 1 and $p$ and $p \geq 2$
+\end{framed}
+
+
+\section{Subsets and Set-builder Notation}
+
+\subsection{Sets and their elements}
+
+\begin{framed}
+   \textbf{Definition}: A \textbf{set} is an unordered collection of distinct \textbf{elements}.
+\end{framed}
+
+\subsection{Subset and proper/strict subset}
+
+\begin{framed}
+   \textbf{Definition}: Set $A$ is a subset of $B$ when every element of $A$ is also an element of $B$ 
+   \[
+     A \subseteq B
+   \] 
+
+  \textbf{Definition}: A \textbf{strict} or \textbf{proper} subset is a subset that is not itself 
+  \[
+    A \subset B
+  \] 
+  
+\end{framed}
+
+\subsection{Empty Set}
+\begin{framed}
+   \textbf{Definition}: The \textbf{empty set $\emptyset$} has no elements 
+
+   \begin{itemize}
+      \item The empty set is a subset of any set 
+         \[
+           \emptyset \subseteq A \text{ for any $A$}
+         \] 
+      \item The empty set is a proper subset of any non-empty set
+         \[
+           \emptyset \subset V \text{ for any non-empty set}
+         \] 
+   \end{itemize}
+\end{framed}
+
+
+\subsection{Standard sets of numbers}
+
+\[
+   \text{Integers: } \mathbb{Z} = \{\hdots, -2, -1, 0, 1, 2 \hdots \}
+   \text{Positive integers: } \mathbb{Z}^+ = \{\hdots, 1, 2 \hdots \}
+   \text{Natural numbers } \mathbb{N} = \{0, 1, 2 \hdots \}
+   \text{Rational numbers } \mathbb{Q}
+   \text{Complex numbers } \mathbb{C}
+\] 
+
+\subsection{Set-builder notation}
+\begin{framed}
+$A$ is the set containing those elements $x$ that have the property $P(x)$
+\[
+   A = \{x | P(x)\}
+\] 
+
+$B$ is the subset of $X$ consisting of those elements $x$ that have the property $P'(x)$
+ \[
+    B = \{ x \in X | P'(x)\}
+\] 
+\end{framed}
+
+\section{Set Operations and Cardinality}
+
+\subsection{Union}
+\begin{framed}
+   \textbf{Definition}: The union of two sets $A$ and $B$ is the set whose elements are elements of $A$ or elements of $B$ (including those who are elements of both)
+   \[
+      A \cup B = \{x | x \in A \text{ or } x \in B \}
+   \] 
+\end{framed}
+
+\subsection{Intersection}
+\begin{framed}
+   \textbf{Definition}: The union of two sets $A$ and $B$ is the set whose elements are elements of both $A$ and $B$ 
+   \[
+      A \cap B = \{x | x \in A \text{ and } x \in B \}
+   \] 
+\end{framed}
+
+\subsection{Union and intersection of more than two sets}
+\begin{framed}
+ \textbf{Definition}: The union and intersection of sets  $A_1, A_2, A_3, \hdots A_n$ are 
+\[
+   A_1 \cup A_2 \cup \hdots A_n = \{ x | x \in A_1 or x \in A_2 \hdots  A_n \}
+\] 
+\[
+   A_1 \cap A_2 \cap \hdots A_n = \{ x | x \in A_1 and x \in A_2 \hdots  A_n \}
+\]
+\end{framed}
+
+\subsection{Disjoint and pairwise disjoint sets}
+
+\begin{framed}
+   \textbf{Definition}: Two sets $A$ and $B$ are said to be disjoint when they have no elements in common. 
+   \[
+     A \cap B = \emptyset
+   \] 
+
+   \textbf{Definition}: $A_1, A_2, \hdots A_n$ are pairwise disjoint when $A_i, A_j$ are disjoint for all $i, j \in \{1, 2, \hdots n\}, i \neq j$
+\end{framed}
+
+Note that
+\[
+ \text{some subsets are pairwise disjoint} \Rightarrow \textbf{their intersection is empty}
+\] 
+
+\[
+  \text{subsets have empty intersection} \nRightarrow \text{subsets are pairwise disjoint}
+\] 
+
+\subsection{Set Difference}
+\begin{framed}
+   \textbf{Definition}: The difference of $A, B$  is the set whose elements are elements of $A$ but not elements of $B$. 
+   \[
+     A \setminus B = \{ x | x \in A \text{ and} x \notin B \} 
+   \] 
+\end{framed}
+
+
+\subsection{Cardinality}
+
+\begin{framed}
+ \textbf{Definition}:The \textbf{cardinality} of a finite set $A$ is the number of elements in $A$
+\end{framed}
+
+\[
+  | \emptyset | = 0
+\] 
+\[
+   \left| \{\emptyset, \{\emptyset\} \} \right|  = 2
+\] 
+\[
+  |A \cup B| = |A| + |B| \text{, if A, B disjoint}
+\] 
+
+\section{Powerset and Cartesian Product}
+
+\subsection{Powerset}
+
+\begin{framed}
+   \textbf{Definition}: The powerset of $A$ is the set whose elements are all the subsets of $A$ 
+   \[
+      2^A = \{X | X \subseteq A\}
+   \] 
+\end{framed}
+
+\[
+   2^{\{\emptyset\}} = \{ \emptyset \{\emptyset\}\}
+\] 
+
+\subsection{Sequence}
+\begin{framed}
+   \textbf{Definition}: A \textbf{sequence} is an ordered collection of elements, with possible repetitions
+\end{framed}
+
+A sequence is also referred to as a $n$-tuple where $n$ is the length
+
+\subsection{Cartesian Product}
+
+\begin{framed}
+   The cartesian product or cross product of $A$ and $B$ is the set whose elements are pairs whose first component is an element of $A$ and second component is an element of $B$
+
+    \[
+       A \times B = \{(a, b) | a \in A \text{ and } b \in B \}
+   \] 
+\end{framed}
+
+Note that 
+\[
+  \text{If } A \subseteq B \text{ then } A \times B \subseteq B \times B
+\] 
+
+
+
+
+
+
+
+
+
+
+
+
+

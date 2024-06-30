@@ -1,0 +1,89 @@
+\chapter{Expectations}
+
+\section{Random Variables}
+\begin{framed}
+   A r.v. on $(\Omega, Pr)$ is a function $X : \Omega \rightarrow \mathbb{R}$. \\
+
+   The values taken by $X$ is
+   \[
+     Val(X) = \{ x \in \mathbb{R} | \exists \omega \in \Omega X(\omega) = x \} 
+   \] 
+
+   The distribution of a random variable $X$ is the function
+   \[
+      f: Val (X) \rightarrow [0, 1] \text{ where } f(x) = Pr[X = x]
+   \] 
+
+   Note that
+   \[
+      \sum_{x \in Val(X)} Pr[X = x] = 1
+   \] 
+
+   Also
+   \[
+      \sum{x \in Val(X)} Pr[X = x] = 1
+   \] 
+\end{framed}
+
+\subsection{Uniform r.v. }
+\begin{framed}
+   Let $v_1 \hdots v_n$ be  $n$ distinct values of $\mathbb{R}$. \\
+
+   $U : \Omega \rightarrow \mathbb{R}$ is uniform within these values when
+   \[
+     Val(U ) = \{ v_1, \hdots v_n \} 
+   \] 
+
+   And the corresponding distribution
+   \[
+      f : \{ v_1, \hdots v_n \}  \rightarrow [0, 1], f(v_i) =  \frac{1}{n}
+   \] 
+\end{framed}
+
+\subsection{Bernoulli r.v.}
+\begin{framed}
+   Given $(\Omega, Pr)$, an r.v. $X: \Omega \rightarrow \mathbb{R}$ with
+   \[
+     Val(X) = \{ 0, 1 \} 
+   \] 
+   and 
+   \[
+      Pr[X = 1] = p
+   \] 
+
+   is called Bernouli r.v.
+
+   
+  
+\end{framed}
+
+\section{Expectations}
+
+\begin{framed}
+   The expectation is 
+   \[
+      E[X] = \sum_{x \in Val(X)} x \cdot Pr[X = x] = \sum_{\omega \in \Omega} X(\omega) \cdot Pr[\omega]
+   \] 
+\end{framed}
+
+\section{LOE}
+\begin{framed}
+   \[
+      E[c_1 X_1 + \hdots c_n X_n] = c_1 E[X_1] + \hdots c_n E[X_n]
+   \]  
+  
+\end{framed}
+
+\section{Indicators}
+
+\begin{framed}
+   Let $A$ be an event in $(\Omega, Pr)$, the indicator r.v. of $A$ is
+   \[
+     I_A(\oemga) = 
+     \begin{cases}
+        1 \text{ if } \omega \in A \\
+        0 \text{ if } \omega \notin A \\
+     \end{cases}
+   \] 
+\end{framed}
+

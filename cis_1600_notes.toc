@@ -1,0 +1,154 @@
+\contentsline {chapter}{\numberline {1}Module 1}{5}{}%
+\contentsline {section}{\numberline {1.1}Addition and Multiplication Rules}{5}{}%
+\contentsline {subsection}{\numberline {1.1.1}Addition Rule}{5}{}%
+\contentsline {subsection}{\numberline {1.1.2}Multiplication rule}{5}{}%
+\contentsline {section}{\numberline {1.2}Parity-based proofs}{5}{}%
+\contentsline {subsection}{\numberline {1.2.1}Odd and Even}{5}{}%
+\contentsline {section}{\numberline {1.3}Divisibility and Primes}{5}{}%
+\contentsline {subsection}{\numberline {1.3.1}Divisibility}{5}{}%
+\contentsline {subsection}{\numberline {1.3.2}Primes}{6}{}%
+\contentsline {section}{\numberline {1.4}Subsets and Set-builder Notation}{6}{}%
+\contentsline {subsection}{\numberline {1.4.1}Sets and their elements}{6}{}%
+\contentsline {subsection}{\numberline {1.4.2}Subset and proper/strict subset}{6}{}%
+\contentsline {subsection}{\numberline {1.4.3}Empty Set}{6}{}%
+\contentsline {subsection}{\numberline {1.4.4}Standard sets of numbers}{6}{}%
+\contentsline {subsection}{\numberline {1.4.5}Set-builder notation}{6}{}%
+\contentsline {section}{\numberline {1.5}Set Operations and Cardinality}{7}{}%
+\contentsline {subsection}{\numberline {1.5.1}Union}{7}{}%
+\contentsline {subsection}{\numberline {1.5.2}Intersection}{7}{}%
+\contentsline {subsection}{\numberline {1.5.3}Union and intersection of more than two sets}{7}{}%
+\contentsline {subsection}{\numberline {1.5.4}Disjoint and pairwise disjoint sets}{7}{}%
+\contentsline {subsection}{\numberline {1.5.5}Set Difference}{8}{}%
+\contentsline {subsection}{\numberline {1.5.6}Cardinality}{8}{}%
+\contentsline {section}{\numberline {1.6}Powerset and Cartesian Product}{8}{}%
+\contentsline {subsection}{\numberline {1.6.1}Powerset}{8}{}%
+\contentsline {subsection}{\numberline {1.6.2}Sequence}{8}{}%
+\contentsline {subsection}{\numberline {1.6.3}Cartesian Product}{8}{}%
+\contentsline {chapter}{\numberline {2}Module 2}{9}{}%
+\contentsline {section}{\numberline {2.1}Counting subsets}{9}{}%
+\contentsline {subsection}{\numberline {2.1.1}Cardinality of powerset}{9}{}%
+\contentsline {section}{\numberline {2.2}Permutations}{9}{}%
+\contentsline {section}{\numberline {2.3}Logical structure of statements}{9}{}%
+\contentsline {subsection}{\numberline {2.3.1}Logical connectives}{9}{}%
+\contentsline {subsection}{\numberline {2.3.2}Logic set-builder notation}{10}{}%
+\contentsline {section}{\numberline {2.4}Implication, conditional and equivalence}{10}{}%
+\contentsline {section}{\numberline {2.5}Symmetric difference}{10}{}%
+\contentsline {section}{\numberline {2.6}Two basic proof patters}{10}{}%
+\contentsline {subsection}{\numberline {2.6.1}Proof pattern for implication}{10}{}%
+\contentsline {subsection}{\numberline {2.6.2}Proof pattern by cases}{10}{}%
+\contentsline {section}{\numberline {2.7}Proofs regarding sets}{11}{}%
+\contentsline {section}{\numberline {2.8}Combinations}{11}{}%
+\contentsline {section}{\numberline {2.9}Predicates and Quantifiers}{11}{}%
+\contentsline {subsection}{\numberline {2.9.1}Predicates}{11}{}%
+\contentsline {subsection}{\numberline {2.9.2}Quantifiers}{11}{}%
+\contentsline {chapter}{\numberline {3}Module 3}{13}{}%
+\contentsline {section}{\numberline {3.1}Stars and Bars}{13}{}%
+\contentsline {section}{\numberline {3.2}Negating statements}{13}{}%
+\contentsline {subsection}{\numberline {3.2.1}Negation of disjunction / conjunction}{13}{}%
+\contentsline {subsection}{\numberline {3.2.2}Negation of quantifiers}{13}{}%
+\contentsline {subsection}{\numberline {3.2.3}Negation of implication}{13}{}%
+\contentsline {section}{\numberline {3.3}Converse and Contrapositive}{13}{}%
+\contentsline {section}{\numberline {3.4}Truth tables}{14}{}%
+\contentsline {section}{\numberline {3.5}Vacuous implications}{14}{}%
+\contentsline {section}{\numberline {3.6}Prove by contrapositive}{14}{}%
+\contentsline {section}{\numberline {3.7}Logical equivalence}{14}{}%
+\contentsline {section}{\numberline {3.8}Proofs by contradiction}{14}{}%
+\contentsline {subsection}{\numberline {3.8.1}Proofs by contradiction I}{14}{}%
+\contentsline {subsection}{\numberline {3.8.2}Proofs by contradiction II}{14}{}%
+\contentsline {section}{\numberline {3.9}Permutations}{15}{}%
+\contentsline {chapter}{\numberline {4}Module 4}{16}{}%
+\contentsline {section}{\numberline {4.1}Binomial Theorem}{16}{}%
+\contentsline {section}{\numberline {4.2}Combinatorial proofs}{16}{}%
+\contentsline {section}{\numberline {4.3}Functions}{16}{}%
+\contentsline {subsection}{\numberline {4.3.1}Set of all functions}{16}{}%
+\contentsline {section}{\numberline {4.4}Integer intervals}{17}{}%
+\contentsline {section}{\numberline {4.5}Surjections and injections}{17}{}%
+\contentsline {subsection}{\numberline {4.5.1}Surjective functions}{17}{}%
+\contentsline {subsection}{\numberline {4.5.2}Injective functions}{17}{}%
+\contentsline {subsection}{\numberline {4.5.3}Surjection \& injection rules}{17}{}%
+\contentsline {chapter}{\numberline {5}Module 5}{19}{}%
+\contentsline {section}{\numberline {5.1}Bijections}{19}{}%
+\contentsline {section}{\numberline {5.2}Counting surjections, injections, and bijections}{19}{}%
+\contentsline {subsection}{\numberline {5.2.1}Counting injections}{19}{}%
+\contentsline {subsection}{\numberline {5.2.2}Counting bijections}{19}{}%
+\contentsline {subsection}{\numberline {5.2.3}Counting surjections}{19}{}%
+\contentsline {section}{\numberline {5.3}Inclusion - Exclusion for Cardinality}{20}{}%
+\contentsline {section}{\numberline {5.4}Derangements}{20}{}%
+\contentsline {section}{\numberline {5.5}Pigeonhole Principle}{20}{}%
+\contentsline {subsection}{\numberline {5.5.1}Example 1}{20}{}%
+\contentsline {subsection}{\numberline {5.5.2}Problem 2}{21}{}%
+\contentsline {chapter}{\numberline {6}Module 6 - Induction}{22}{}%
+\contentsline {section}{\numberline {6.1}Ordinary Induction}{22}{}%
+\contentsline {subsection}{\numberline {6.1.1}Good to memorize}{22}{}%
+\contentsline {section}{\numberline {6.2}Strong Induction}{22}{}%
+\contentsline {subsection}{\numberline {6.2.1}Triangular example}{22}{}%
+\contentsline {section}{\numberline {6.3}Recurrence}{22}{}%
+\contentsline {subsection}{\numberline {6.3.1}Recurrence relationship Problem 1}{23}{}%
+\contentsline {section}{\numberline {6.4}Fibonacci}{23}{}%
+\contentsline {chapter}{\numberline {7}Probability}{24}{}%
+\contentsline {section}{\numberline {7.1}Probability space}{24}{}%
+\contentsline {section}{\numberline {7.2}Uniform space}{24}{}%
+\contentsline {section}{\numberline {7.3}Bernoulli Trials}{24}{}%
+\contentsline {section}{\numberline {7.4}Probability Properties}{24}{}%
+\contentsline {chapter}{\numberline {8}Probability II}{26}{}%
+\contentsline {section}{\numberline {8.1}PIE}{26}{}%
+\contentsline {section}{\numberline {8.2}Independence}{26}{}%
+\contentsline {section}{\numberline {8.3}Pairwise \& Mutual Independence}{26}{}%
+\contentsline {section}{\numberline {8.4}Conditional Probability}{27}{}%
+\contentsline {section}{\numberline {8.5}Chain Rule}{27}{}%
+\contentsline {chapter}{\numberline {9}Expectations}{28}{}%
+\contentsline {section}{\numberline {9.1}Random Variables}{28}{}%
+\contentsline {subsection}{\numberline {9.1.1}Uniform r.v. }{28}{}%
+\contentsline {subsection}{\numberline {9.1.2}Bernoulli r.v.}{28}{}%
+\contentsline {section}{\numberline {9.2}Expectations}{29}{}%
+\contentsline {section}{\numberline {9.3}LOE}{29}{}%
+\contentsline {section}{\numberline {9.4}Indicators}{29}{}%
+\contentsline {chapter}{\numberline {10}Probability III}{30}{}%
+\contentsline {section}{\numberline {10.1}Variance }{30}{}%
+\contentsline {section}{\numberline {10.2}Binomial r.v.}{30}{}%
+\contentsline {chapter}{\numberline {11}Graph Theory I}{31}{}%
+\contentsline {section}{\numberline {11.1}Terminology}{31}{}%
+\contentsline {subsection}{\numberline {11.1.1}Vertex degree}{31}{}%
+\contentsline {section}{\numberline {11.2}Special Graphs}{31}{}%
+\contentsline {subsection}{\numberline {11.2.1}Edgeless}{31}{}%
+\contentsline {subsection}{\numberline {11.2.2}Complete}{32}{}%
+\contentsline {subsection}{\numberline {11.2.3}Paths}{32}{}%
+\contentsline {subsection}{\numberline {11.2.4}Cycles}{32}{}%
+\contentsline {subsection}{\numberline {11.2.5}Grids}{32}{}%
+\contentsline {section}{\numberline {11.3}Walks and paths}{33}{}%
+\contentsline {section}{\numberline {11.4}Connected Components}{33}{}%
+\contentsline {section}{\numberline {11.5}Counting CCs}{34}{}%
+\contentsline {chapter}{\numberline {12}Module 12}{35}{}%
+\contentsline {section}{\numberline {12.1}Graph Isomorphism}{35}{}%
+\contentsline {section}{\numberline {12.2}Subgraphs}{35}{}%
+\contentsline {section}{\numberline {12.3}Counting paths}{36}{}%
+\contentsline {section}{\numberline {12.4}Subgraphs}{36}{}%
+\contentsline {section}{\numberline {12.5}Counting paths}{36}{}%
+\contentsline {subsection}{\numberline {12.5.1}Counting paths in cycles}{36}{}%
+\contentsline {section}{\numberline {12.6}Cycles}{37}{}%
+\contentsline {subsection}{\numberline {12.6.1}Counting cycles}{37}{}%
+\contentsline {section}{\numberline {12.7}Forests, Trees, Leaves}{37}{}%
+\contentsline {subsection}{\numberline {12.7.1}Trees and forests}{37}{}%
+\contentsline {subsection}{\numberline {12.7.2}Leaves}{37}{}%
+\contentsline {section}{\numberline {12.8}Properties of trees}{38}{}%
+\contentsline {subsection}{\numberline {12.8.1}Any edge is cut edge}{38}{}%
+\contentsline {subsection}{\numberline {12.8.2}Trees are maximally acyclic}{38}{}%
+\contentsline {subsection}{\numberline {12.8.3}Trees are unique-path connected}{38}{}%
+\contentsline {chapter}{\numberline {13}Module 13}{39}{}%
+\contentsline {section}{\numberline {13.1}Spanning Trees}{39}{}%
+\contentsline {subsection}{\numberline {13.1.1}Existence of spanning trees}{39}{}%
+\contentsline {section}{\numberline {13.2}Graph coloring}{39}{}%
+\contentsline {subsection}{\numberline {13.2.1}Definitions}{39}{}%
+\contentsline {subsection}{\numberline {13.2.2}Chromatic number of graphs}{39}{}%
+\contentsline {subsection}{\numberline {13.2.3}Bipartite graphs}{40}{}%
+\contentsline {subsection}{\numberline {13.2.4}Distance in a connected graph}{41}{}%
+\contentsline {section}{\numberline {13.3}Cliques and independent sets}{41}{}%
+\contentsline {chapter}{\numberline {14}Module 14}{42}{}%
+\contentsline {section}{\numberline {14.1}Directed graphs}{42}{}%
+\contentsline {subsection}{\numberline {14.1.1}Directed walk}{42}{}%
+\contentsline {subsection}{\numberline {14.1.2}Directed cycle}{42}{}%
+\contentsline {subsection}{\numberline {14.1.3}Directed cycle}{43}{}%
+\contentsline {section}{\numberline {14.2}Recheability and strong connectivity}{43}{}%
+\contentsline {section}{\numberline {14.3}Reduced graphs}{43}{}%
+\contentsline {section}{\numberline {14.4}DAGs}{43}{}%
+\contentsline {section}{\numberline {14.5}Binary trees}{44}{}%

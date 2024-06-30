@@ -1,0 +1,78 @@
+\chapter{Probability II}
+
+\section{PIE}
+\begin{framed}
+   For any events $A, B, C \subseteq \Omega$
+   \begin{align*}
+      Pr[A \cup B \cup C] &= Pr[A] + Pr[B] + Pr[C] \\ 
+                          &- Pr[A \cap B] - Pr[B \cap C] - Pr[C \cap A]\\
+                          &= Pr[A \cap B \cap C]
+   \end{align*}
+\end{framed}
+
+\section{Independence}
+
+\begin{framed}
+   Two events $A, B \subseteq \Omega$ are independent, we write $A \perp B$, when
+    \[
+       Pr[A \cap B ] = Pr[A] \times Pr[B]
+   \] 
+
+   \textbf{Property 1}:  If $Pr[A] = 0$ then  $A \perp B$ for any  $B$.  $\emptyset \perp E$ for any $E$. \\ 
+
+   \textbf{Property 2}: $\Omega \perp E$ for any $E$ \\
+
+   \textbf{Property 3}: If $A \perp B$ then 
+    \[
+       Pr[A \cup B] = 1 - (1 - Pr[A]) (1 - Pr[B])
+   \] 
+   \textbf{Property 4}: The following are equivalent
+   \begin{itemize}
+      \item $A \perp B$
+      \item $\overline{A} \perp B$
+      \item ${A} \perp \overline{B}$ 
+      \item $\overline{A} \perp \overline{B}$
+   \end{itemize}
+\end{framed}
+
+\section{Pairwise \& Mutual Independence}
+
+\begin{framed}
+   $A_1 \hdots A_n$ pairwise independent when for any $1 \leq i \leq j \leq n$,  $A_i \perp A_j$ \\
+
+   $A_1 \hdots A_n$ mutually independent when for any $\{ i_1, \hdots i_k \} \subset [1 \hdots n]$, 
+   \[
+      Pr[A_{i_1} \cap \hdots A_{i_k} ] = Pr[A_{i_1}] \hdots Pr[A_{i_k}]
+   \] 
+
+   Note that 
+   \[
+     \textbf{mutual independence} \implies \textbf{ pairwise independence}
+   \] 
+
+   But the converse is not true
+  
+\end{framed}
+
+
+\section{Conditional Probability}
+
+\begin{framed}
+   \begin{align*}
+      Pr[E |U] = \frac{Pr[E \cap U]}{Pr[U]}
+   \end{align*}
+   
+  
+\end{framed}
+
+
+\section{Chain Rule}
+
+\begin{framed}
+   for any $A, B, C$
+   \[
+      Pr[A \cap B \cap C] = Pr[A] \times Pr[B | A] \times Pr[C | A \cap B]
+   \] 
+  
+\end{framed}
+
